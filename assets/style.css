@@ -53,7 +53,7 @@ footer li:hover{
     cursor:pointer;
     color:var(--veryDarkBlue);
 }
-@media screen and (min-width:380px){
+@media screen and (min-width:421px){
 #root{
     width:85%;
     margin-left:50%;
@@ -294,7 +294,7 @@ footer .social{
 
 
 
-@media screen and (max-width:379px){
+@media screen and (max-width:420px){
     body{
         width:100vw;
     }
