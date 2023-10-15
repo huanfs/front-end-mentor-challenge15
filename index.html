@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Front end mentor challenge 15</title>
+	<link rel="stylesheet" type="text/css" href="./assets/style.css">
+	<script src="https://kit.fontawesome.com/cb75456a03.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+<div id="root">
+</div>
+<script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
+<script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
+<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+
+<script type="text/babel">
+	const App = () => {
+		function shortener(){
+			alert("PRECISO ADICIONAR A API DE ENCURTAR LINK")
+		}
+    return(
+        <>
+		{/*header that contains navigation and buttons to log-in*/}
+			<header>
+				<nav>
+					<img src="assets/images/logo.svg"></img>
+					<ul>
+						<li><a href="">features</a></li>
+						<li><a href="">pricings</a></li>
+						<li><a href="">resources</a></li>
+					</ul>
+				</nav>
+				<div className="buttons">
+					<button type="button">login</button>
+					<button type="button">sign-up</button>
+				</div>
+			</header>
+		{/*first section who contains a illustration and title*/}
+			<section className="presentation">
+				<article>
+					<h1>
+						more than just short links
+					</h1>
+					<p>
+						build yours brand's recognition and 
+						get detailed insights on how your links are 
+						performing
+					</p>
+
+					<button type="button" className="actionButton">get started</button>
+				</article>
+
+				<aside>
+					<img src="assets/images/illustration-working.svg"></img>
+				</aside>
+			</section>
+		{/*second section*/}
+			<section className="cards">
+		{/*formulary with input and action button*/}
+			<form>
+				<input type="text" placeholder="shorten a link here..." id="input"></input>
+				<button type="button" className="actionButton" id="btn" onClick={shortener}>shorten it!</button>
+			</form>
+
+		{/*second tittle and description*/}
+			<article>
+				<h1>advanced statistics</h1>
+				<p>
+					track how your links are performign accross 
+					the web with our advanced statistics dashboard
+				</p>
+			</article>
+		{/*article father of cards component*/}
+			<article>
+				<div className="card">
+					<img src="assets/images/icon-brand-recognition.svg"></img>
+					<h1>
+						Brand Recognition
+					</h1>
+					<p>
+						Burst your brand recognition with each click 
+						generic links don't mean a think. Branded links 
+						help instil confidence in your content
+					</p>
+				</div>
+				<div className="card">
+					<img src="assets/images/icon-detailed-records.svg"></img>
+					<h1>
+						Detailed Records
+					</h1>
+					<p>
+						Burst your brand recognition with each click 
+						generic links don't mean a think. Branded links 
+						help instil confidence in your content
+					</p>
+				</div>
+				<div className="card">
+					<img src="assets/images/icon-fully-customizable.svg"></img>
+					<h1>
+						Fully Customizable
+					</h1>
+					<p>
+						Burst your brand recognition with each click 
+						generic links don't mean a think. Branded links 
+						help instil confidence in your content
+					</p>
+				</div>
+			</article>
+			</section>
+			{/*section styled  who contain a action button and las title*/}
+			<article className="action">
+				<h1>
+					Boost your links today!
+				</h1>
+				<button tpe="button" className="actionButton">Get started</button>
+			</article>
+			{/*footer*/}
+			<footer>
+				<img src="assets/images/logo.svg"></img>
+
+				<ul>
+					<li>features</li>
+					<li>link shortening</li>
+					<li>branded links</li>
+					<li>analytics</li>
+				</ul>
+				<ul>
+					<li>resources</li>
+					<li>blog</li>
+					<li>developers</li>
+					<li>support</li>
+				</ul>
+				<ul>
+					<li>company</li>
+					<li>about</li>
+					<li>our team</li>
+					<li>careers</li>
+					<li>contact</li>
+				</ul>
+				<ul className="social">
+					<li><i className="fa-brands fa-facebook"></i></li>
+					<li><i className="fa-brands fa-twitter"></i></li>
+					<li><i className="fa-brands fa-pinterest"></i></li>
+					<li><i className="fa-brands fa-instagram"></i></li>
+				</ul>
+			</footer>
+		</>
+        );
+}
+ReactDOM.render(<App/>,document.getElementById('root'));
+</script>
+</body>
+</html>
