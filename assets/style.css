@@ -121,8 +121,6 @@ header .buttons button{
     opacity:0.7;
 }
 
-
-
 /* FIRST SECTION */
 .presentation{
     padding:2em 0;
@@ -148,8 +146,6 @@ header .buttons button{
 .presentation aside img{
     width:400px;
 }
-
-
 
 /* FORMULARY */
 .cards{
@@ -188,9 +184,6 @@ header .buttons button{
     border-radius:5px;
 }
 
-
-
-
 .cards article:nth-child(2){
     width:40%;
     display:flex;
@@ -207,8 +200,6 @@ header .buttons button{
     margin-top:1em;
     color:var(--grayishViolet);
 }
-
-
 
 .cards article:nth-child(3){
     width:100%;
@@ -250,9 +241,6 @@ header .buttons button{
 }
 }
 
-
-
-
 .action{
     grid-area:action;
     display:flex;
@@ -268,7 +256,6 @@ header .buttons button{
 .action h1{
     color:#fff;
 }
-
 
 footer{
     grid-area:footer;
@@ -290,9 +277,7 @@ footer .social{
     gap:0.5em;
 }
 
-
-
-
+/*MOBILE STYLE*/
 
 @media screen and (max-width:420px){
     body{
@@ -300,7 +285,6 @@ footer .social{
     }
     #root{
         width:100%;
-        border:1px solid red;
         display:flex;
         flex-direction:column;
         align-items:center;
@@ -338,6 +322,12 @@ footer .social{
         display:flex;
         flex-direction:column-reverse;
         align-items:center;
+    }
+    .presentation aside{
+        width:100vw;
+        display:flex;
+        align-items:center;
+        justify-content:center;
     }
     .presentation aside img{
         width:90%;
@@ -415,7 +405,6 @@ footer .social{
     }
     .action{
         width:100vw;
-        border:2px solid red;
     }
     footer{
         width:100vw;
@@ -423,6 +412,10 @@ footer .social{
         flex-direction:column;
         align-items:center;
         gap:3em;
+    }
+    footer ul{
+        width:60%;
+        margin-left:25%;
     }
 }
 
